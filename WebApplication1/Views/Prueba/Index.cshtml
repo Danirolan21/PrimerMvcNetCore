@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    int valor = 14;
+    string texto = "Hoy es lunes";
+    valor += 1;
+    texto += " y mañana martes¡¡";
+    texto = texto.ToUpper();
+}
+DIBUJAR VARIABLES
+<h2 style="color: red">
+    Texto: @texto, Núhero: @valor
+</h2>
+CODIGO LOGICO CON HTML
+@if (valor > 0) {
+    //CODIGO C#
+    texto = "POSITIVO";
+    <h3 style="color: green">@texto</h3>
+}else {
+    //CODIGO C#
+    texto = "NEGATIVO";
+    <h3 style="color: red">@texto</h3>
+}
